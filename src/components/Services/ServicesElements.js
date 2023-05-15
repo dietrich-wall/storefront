@@ -17,6 +17,7 @@ export const ServicesContainer = styled.div`
   }
 `;
 
+// TODO setup @media for max-width and add 1fr to grid
 export const ServicesWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;

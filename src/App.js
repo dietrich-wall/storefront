@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import Home from './pages/index';
+import Landing from './pages/landing';
 import SigninPage from './pages/signin';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
@@ -26,8 +26,8 @@ function App() {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/signin' element={<SigninPage />} exact />
+        <Route path="/" element={<Landing />} />
+        <Route path='/signin' element={<SigninPage />} />
       </Routes>
     </BrowserRouter>
   );
