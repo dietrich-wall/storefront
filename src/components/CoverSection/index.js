@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Video from '../../videos/video.mp4';
-import { CoverContainer, CoverBg, VideoBg, CoverContent, CoverH1, CoverP, CoverBtnWrapper, ArrowForward, ArrowRight } from './CoverElements';
+import { CoverContainer, CoverBg, Img, VideoBg, CoverContent, CoverH1, CoverP, CoverBtnWrapper, ArrowForward, ArrowRight } from './CoverElements';
 import { Button } from '../ButtonElements';
+import svg2 from '../../images/stock/02.jpg';
+
 
 const CoverSection = () => {
   const [hover, setHover] = useState(false);
@@ -13,7 +15,7 @@ const CoverSection = () => {
   return (
     <CoverContainer>
       <CoverBg>
-        <VideoBg autoPlay loop muted  type='video/mp4' />
+        <Img src={svg2} />
       </CoverBg>
       <CoverContent>
         <CoverH1>Awesome Title Goes Here</CoverH1>

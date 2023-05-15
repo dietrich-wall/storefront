@@ -43,8 +43,15 @@ export const VideoBg = styled.video`
   background: #232a34;
 `;
 
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
 export const CoverContent = styled.div`
   z-index: 3;
+  background: "transparent";
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;

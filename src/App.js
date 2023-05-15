@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import Landing from './pages/landing';
 import SigninPage from './pages/signin';
+import ShopPage from './pages/shop';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path='/signin' element={<SigninPage />} />
+        <Route path='/shop' element={<ShopPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

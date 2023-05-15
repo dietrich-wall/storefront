@@ -1,10 +1,10 @@
-import svg1 from '../../images/svg-1.svg';
-import svg2 from '../../images/svg-2.svg';
-import svg3 from '../../images/svg-3.svg';
+import svg1 from '../../images/stock/01.jpg';
+import svg2 from '../../images/stock/02.jpg';
+import svg3 from '../../images/stock/03.jpg';
 
 export const aboutObj = {
   id: 'about',
-  lightbg: false,
+  lightBg: false,
   lighttext: true,
   lightTextDesc: true,
   topLine: 'Title of the Company',
@@ -16,12 +16,13 @@ export const aboutObj = {
   alt: 'Car',
   dark: true,
   primary: true,
-  darktext: false
+  darktext: false,
+  linkto: "/shop"
 };
 
 export const discoverObj = {
   id: 'discover',
-  lightbg: true,
+  lightBg: true,
   lighttext: false,
   lightTextDesc: false,
   topLine: 'Discover a lot of things',
@@ -33,14 +34,34 @@ export const discoverObj = {
   alt: 'Car',
   dark: false,
   primary: false,
-  darktext: true
+  darktext: true,
+  linkto: "/shop"
 };
 
 export const signupObj = {
   id: 'signup',
-  lightbg: true,
+  lightBg: true,
   lighttext: false,
   lightTextDesc: false,
+  topLine: 'Create a new account',
+  headline: 'Creating an account is extremely easy',
+  description: 'Create a new account unless you already have one, and enjoy our offerings',
+  buttonLabel: 'Get started',
+  imgstart: true,
+  img: svg3,
+  alt: 'svg3',
+  dark: false,
+  primary: false,
+  darktext: true,
+  linkto: "/shop"
+};
+
+
+export const newlistingObj = {
+  id: 'about',
+  lightBg: false,
+  lighttext: true,
+  lightTextDesc: true,
   topLine: 'Create a new account',
   headline: 'Creating an account is extremely easy',
   description: 'Create a new account unless you already have one, and enjoy our offerings',
@@ -48,7 +69,8 @@ export const signupObj = {
   imgstart: false,
   img: svg3,
   alt: 'svg3',
-  dark: false,
-  primary: false,
-  darktext: true
+  dark: true,
+  primary: true,
+  darktext: true,
+  linkto: "/shop"
 };

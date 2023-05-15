@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { MenuIcon, Nav, NavbarContainer, NavItem, NavLink, NavLogo, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
-import Modal from "../Modal";
+import { MenuIcon, Nav, NavbarContainer, NavItem, NavLink, NavLogo, Img, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import logoImg from '../../images/moto/logo1.png';
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -27,10 +27,10 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav $scrollNav>
+        <Nav scrollnav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              MotorradX.de
+              <Img src={logoImg} />
           </NavLogo>
             <MenuIcon onClick={toggle}>
               <FaBars />
