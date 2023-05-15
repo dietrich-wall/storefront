@@ -4,6 +4,7 @@ import Landing from './pages/landing';
 import SigninPage from './pages/signin';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import {
   BrowserRouter,
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path='/signin' element={<SigninPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
