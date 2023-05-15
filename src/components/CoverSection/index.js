@@ -13,7 +13,7 @@ const CoverSection = () => {
   return (
     <CoverContainer>
       <CoverBg>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+        <VideoBg autoPlay loop muted  type='video/mp4' />
       </CoverBg>
       <CoverContent>
         <CoverH1>Awesome Title Goes Here</CoverH1>

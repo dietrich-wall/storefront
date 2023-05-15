@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import { MenuIcon, Nav, NavbarContainer, NavItem, NavLink, NavLogo, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
+import Modal from "../Modal";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -26,10 +27,10 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <Nav scrollNav={scrollNav}>
+        <Nav $scrollNav>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              logo
+              MotorradX.de
           </NavLogo>
             <MenuIcon onClick={toggle}>
               <FaBars />
@@ -48,9 +49,6 @@ const Navbar = ({ toggle }) => {
                 <NavLink to='signup' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Sign Up</NavLink>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
-            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>
@@ -59,3 +57,4 @@ const Navbar = ({ toggle }) => {
 };
 
 export default Navbar;
+

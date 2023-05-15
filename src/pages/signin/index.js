@@ -1,5 +1,13 @@
 import React from 'react';
 
+
+
+
+// TODO make Modal Forms
+
+
+
+
 import styled from 'styled-components';
 
 const CoverContainer = styled.div`
@@ -8,7 +16,7 @@ const CoverContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 1000px;
   position: relative;
   z-index: 1;
 
@@ -35,13 +43,27 @@ const CoverContent = styled.div`
   align-items: center;
 `;
 
+const CoverH1 = styled.h1`
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
 const SigninPage = () => {
   return (
     <>
       <CoverContainer>
-      <CoverContent>
-        <h1>Test</h1>
-      </CoverContent>
+        <CoverContent>
+          <CoverH1 verH1> MotorradX.de </CoverH1>
+        </CoverContent>
       </CoverContainer>
     </>
   );

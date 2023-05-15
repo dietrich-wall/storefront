@@ -5,6 +5,11 @@ import SigninPage from './pages/signin';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+// import { ModalProvider, BaseModalBackground } from "styled-react-modal";
+// import ModalButton from "./components/ModalElement";
+// import styled from "styled-components";
+
+
 
 import {
   BrowserRouter,
@@ -21,10 +26,9 @@ function App() {
     setIsOpen(!isOpen);
   };
 
-
   return (
     <BrowserRouter>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar open={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Routes>
         <Route path="/" element={<Landing />} />
