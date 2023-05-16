@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
+import { Routes, Route } from "react-router-dom";
 import Landing from './pages/landing';
 import SigninPage from './pages/signin';
 import ShopPage from './pages/shop';
@@ -10,15 +11,6 @@ import Footer from './components/Footer';
 // import ModalButton from "./components/ModalElement";
 // import styled from "styled-components";
 
-
-
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
-
 function App() {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -28,8 +20,8 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-      <Sidebar open={isOpen} toggle={toggle} />
+    <>
+     <Sidebar open={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Routes>
         <Route path="/" element={<Landing />} />
@@ -37,7 +29,8 @@ function App() {
         <Route path='/shop' element={<ShopPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
+      
   );
 }
 

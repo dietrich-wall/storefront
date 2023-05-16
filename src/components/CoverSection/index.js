@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
 import { CoverContainer, CoverBg, Img, VideoBg, CoverContent, CoverH1, CoverP, CoverBtnWrapper, ArrowForward, ArrowRight } from './CoverElements';
 import { Button } from '../ButtonElements';
 import svg2 from '../../images/stock/02.jpg';
